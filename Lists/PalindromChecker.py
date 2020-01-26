@@ -14,3 +14,7 @@ def is_palindrome_easy(word):
 print("Palindrome Words")
 word = input("Word: ")
 print("Is Palindrome: ",is_palindrome_easy(word))
+
+word1 = "Hello"
+print(word1)
+print(word1[::-1])

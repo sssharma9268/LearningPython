@@ -11,15 +11,15 @@ class Student:
         self.name=name
         self.age=age
 
-    def test(self):
+    def test2(self):
         print("Test Statement of class Student")
 
 #multiple inheritance, priority is given from left to right when attributes or methods of two base classes are same.
-class Employee(Student,Person):
+class Employee(Person,Student):
     def displayInfo(self):
         print("Name: ",self.name)
         print("Age: ",self.age)
 
 e = Employee("Sumit",25)
 e.displayInfo()
-e.test()
+e.test2()

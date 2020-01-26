@@ -19,8 +19,9 @@ d = {'name':"Sumit",'lastname':"Sharma",'age':25}
 
 length = len(d)
 d.update({"age":20})
-d.pop()  #by default pops the last pair, else u can specify the key u want to pop
+#d.pop()  #by default pops the last pair, else u can specify the key u want to pop
 
 d = {x:x*x for x in range(10) } #create a dict whose values are squares of their keys
-
+print(d)
 d = {x:x*x for x in range(10) if x % 2 == 0} # does same as above but only considers even no's as pairs
+print(d)

@@ -1,6 +1,7 @@
 s = {1,2,3,4}
 #it will only consider uniques values and remove the duplicate values
 s = {1,1,1,2,2,2,2,3,3,3,3,4,4,4,4}
+print(s)
 s = {"x",2,(3,4)} #allows only tuple and list as list is mutable
 s=set([1,2,3,4])  #but here using set method u can use list to create a set
 s = set("Hello")
