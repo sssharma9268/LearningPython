@@ -3,10 +3,10 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-mydataset = pd.read_csv('datasets\AllCountries.csv')
+mydataset = pd.read_csv('..\datasets\AllCountries.csv')
 
-print(mydataset.ndim)
-print(mydataset.shape)
+# print(mydataset.ndim)
+# print(mydataset.shape)
 #print(mydataset.head())
 #print(mydataset.tail())
 #print(mydataset.info())
@@ -30,6 +30,7 @@ for row in range(len(mydataset)):
     else:
         mydataset.loc[row,'Category'] = 'Large'
 
+print(mydataset)
 # print(mydataset.groupby('Category').groups)
 #
 # for country, group in mydataset.groupby('Category'):
@@ -37,24 +38,25 @@ for row in range(len(mydataset)):
 
 
 
-champion_stats={'Team':['India','Australia','West Indies','Pakistan','Sri Lanka','England'],
-           'ICC_rank':[2,3,7,8,4,5],
-           'World_champions_Year':[2011,2015,1979,1992,1996,2019],
-           'Points':[874,787,753,673,855,700]}
+# champion_stats={'Team':['India','Australia','West Indies','Pakistan','Sri Lanka','England'],
+#            'ICC_rank':[2,3,7,8,4,5],
+#            'World_champions_Year':[2011,2015,1979,1992,1996,2019],
+#            'Points':[874,787,753,673,855,700]}
+#
+# match_stats={'Team':['India','Australia','West Indies','Pakistan','Sri Lanka'],
+#              'World_cup_played':[11,10,11,9,8],
+#              'ODIs_played':[733,988,712,679,662]}
+#
+#
+# df1=pd.DataFrame(champion_stats)
+# df2=pd.DataFrame(match_stats)
 
-match_stats={'Team':['India','Australia','West Indies','Pakistan','Sri Lanka'],
-             'World_cup_played':[11,10,11,9,8],
-             'ODIs_played':[733,988,712,679,662]}
+# print(df1)
+# print(df2)
 
-
-df1=pd.DataFrame(champion_stats)
-df2=pd.DataFrame(match_stats)
-
-print(df1)
-print(df2)
-
-#df3=pd.merge(df1,df2,on='Team') same as inner
-df3=pd.merge(df1,df2,on='Team',how='left')
+# same as inner
+# df3=pd.merge(df1,df2,on='Team')
+# df3=pd.merge(df1,df2,on='Team',how='left')
 #df3=pd.merge(df1,df2,on='Team',how='right')
-#df3=pd.merge(df1,df2,on='Team',how='outer')
-print(df3)
+# df3=pd.merge(df1,df2,on='Team',how='outer')
+# print(df3)
